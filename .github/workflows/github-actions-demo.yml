@@ -12,11 +12,11 @@ on:
 
 jobs:
   Build:
-    runs-on: ubntu-latest
+    runs-on: ubuntu-latest
     steps:
       - run: |
-        echo ":party: The job was triggered by event: ${{ github.event_name }}"
-        echo ":inspect: The name of your branche is ${{ github.ref}}"
+          echo "🎉 The job was triggered by event: ${{ github.event_name }}"
+          echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ."
 
       - uses: actions/checkout@v3.3.0
 

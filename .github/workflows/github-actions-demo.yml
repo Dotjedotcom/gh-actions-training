@@ -17,6 +17,7 @@ on:
 
 jobs:
   Build:
+    environment: ${{environment.Production}} 
     runs-on: ubuntu-latest
     steps:
       - run: |
